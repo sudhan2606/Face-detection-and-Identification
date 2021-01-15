@@ -46,7 +46,7 @@ if __name__ == '__main__':
         while (True):
             ret, img = cam.read()
             gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-            faces = faceDetect.detectMultiScale(gra)
+            faces = faceDetect.detectMultiScale(gray)
             faces = faceDetect.detectMultiScale(gray, 1.0485258, 6)
             #detect face and store 50 images into Face-dataset folder
             #the path for the image will be Face-dataset/username/ID.1
